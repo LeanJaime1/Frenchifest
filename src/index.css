@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@import "tailwindcss";
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap');
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
