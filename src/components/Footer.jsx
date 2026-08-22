@@ -2,12 +2,10 @@ const Footer = () => {
   return (
     <footer className="w-full bg-black border-t border-zinc-800/80 pt-16 pb-12 text-white">
       <div className="max-w-[1440px] w-full mx-auto px-6 sm:px-8 lg:px-12 flex flex-col gap-16">
-        
         {/* Fila Superior */}
         <div className="flex flex-col lg:flex-row justify-between items-start gap-12">
-          
-          {/* Logo y Bajada */}
-          <div className="flex flex-col gap-5 max-w-sm">
+          {/* Logo, Bajada e Íconos de Redes */}
+          <div className="flex flex-col gap-6 max-w-sm">
             <a href="#" className="flex items-center gap-3 w-fit">
               <img
                 src="/frenchi-logo.png"
@@ -22,10 +20,50 @@ const Footer = () => {
               Alquiler de artefactos de luz LED RGB para eventos. Zona Sur de
               Buenos Aires y alrededores.
             </p>
+
+            {/* Redes y Vías de Contacto con SVG interactivos */}
+            <div className="flex items-center gap-3 pt-1">
+              {/* Instagram */}
+              <a
+                href="https://instagram.com/frenchifesteventos"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="w-10 h-10 border border-zinc-800 bg-zinc-900/50 flex items-center justify-center text-zinc-400 hover:text-pink-500 hover:border-pink-500/50 hover:shadow-[0_0_15px_rgba(236,72,153,0.3)] transition-all duration-200"
+              >
+                <svg
+                  className="w-4 h-4 fill-none stroke-current stroke-2"
+                  viewBox="0 0 24 24"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+
+              {/* Gmail / Correo */}
+              <a
+                href="mailto:tu_email@gmail.com"
+                aria-label="Gmail"
+                className="w-10 h-10 border border-zinc-800 bg-zinc-900/50 flex items-center justify-center text-zinc-400 hover:text-red-500 hover:border-red-500/50 hover:shadow-[0_0_15px_rgba(239,68,68,0.3)] transition-all duration-200"
+              >
+                <svg
+                  className="w-4 h-4 fill-none stroke-current stroke-2"
+                  viewBox="0 0 24 24"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+              </a>
+            </div>
           </div>
 
-          {/* Links de Navegación */}
-          <div className="grid grid-cols-2 gap-12 sm:gap-20">
+          {/* Links de Navegación y Contacto */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-10 sm:gap-16">
             {/* Columna: Secciones */}
             <div className="flex flex-col gap-4">
               <span className="font-mono text-zinc-500 text-xs font-semibold uppercase tracking-[3px]">
@@ -67,8 +105,9 @@ const Footer = () => {
               </ul>
             </div>
 
+
             {/* Columna: Contacto */}
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 col-span-2 sm:col-span-1">
               <span className="font-mono text-zinc-500 text-xs font-semibold uppercase tracking-[3px]">
                 Contacto
               </span>
@@ -94,14 +133,11 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-
         </div>
 
         {/* Fila Inferior: Copyright y Créditos */}
         <div className="pt-8 border-t border-zinc-900 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-[11px] uppercase tracking-[2px] text-zinc-600">
-          <p>
-            © 2026 FRENCHIFEST — TODOS LOS DERECHOS RESERVADOS
-          </p>
+          <p>© 2026 FRENCHIFEST — TODOS LOS DERECHOS RESERVADOS</p>
           <p className="flex items-center gap-1">
             <span>Desarrollado por</span>
             <a
@@ -114,7 +150,6 @@ const Footer = () => {
             </a>
           </p>
         </div>
-
       </div>
     </footer>
   );

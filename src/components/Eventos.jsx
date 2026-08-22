@@ -31,7 +31,6 @@ const Eventos = () => {
     >
       <div className="max-w-[1440px] w-full mx-auto px-6 sm:px-8 lg:px-12 flex flex-col items-start gap-12 lg:gap-16 mt-20 mb-10 lg:mb-32">
         
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +43,7 @@ const Eventos = () => {
           <span className="text-zinc-600 shrink-0">PARA QUÉ EVENTOS ]</span>
         </motion.div>
 
-        {/* Lista de Filas animadas por Scroll */}
+        
         <div className="w-full flex flex-col border-y divide-y border-zinc-800/80 divide-zinc-800/80">
           {eventosLista.map((evento, index) => (
             <motion.div
@@ -60,6 +59,7 @@ const Eventos = () => {
               className="group cursor-pointer px-6 sm:px-8 py-8 sm:py-12 flex items-center justify-between transition-colors duration-700 ease-in-out hover:bg-zinc-900/50"
             >
               <div className="flex items-center gap-6 lg:gap-12">
+                <a href="#contacto">
                 <span className="text-zinc-400 group-hover:text-yellow-400 font-bold text-lg sm:text-2xl tracking-widest transition-colors duration-700 ease-in-out">
                   {evento.num}
                 </span>
@@ -71,6 +71,7 @@ const Eventos = () => {
                     {evento.descripcion}
                   </p>
                 </div>
+                </a>
               </div>
 
               <svg
