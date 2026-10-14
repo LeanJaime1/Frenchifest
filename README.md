@@ -9,4 +9,4 @@ Landing page para una empresa de iluminación para eventos. Proyecto real desarr
 - [Galería de eventos / formulario de contacto / botón de WhatsApp]
 
 ## 🛠️ Tecnologías
-[React / JavaScript / CSS / Tailwind] · Git · [Vercel]
+React · JavaScript · Tailwind · Git · Vercel
