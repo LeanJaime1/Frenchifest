@@ -4,8 +4,6 @@ Landing page para una empresa de iluminación para eventos. Proyecto real desarr
 
 ## 🔗 **Demo:** https://frenchifest.vercel.app
 
-![Captura del sitio](./captura.png)
-
 ## ✨ Características
 - Diseño responsive
 - [Galería de eventos / formulario de contacto / botón de WhatsApp]
